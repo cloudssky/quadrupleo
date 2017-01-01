@@ -46,7 +46,7 @@ $ terraform plan
 
 $ terraform plan -out quadrupleo-`date +'%s'`.plan
 
-Provision your Origin base cluster
+# Provision your Origin base cluster
 
 Now you’re ready to provision your base cluster in less than one minute:
 
@@ -55,11 +55,7 @@ $ terraform apply
 $ terraform show
 
 
-In Horizon, under Network Topology, you should see something similar to this:
-
-[[https://github.com/cloudssky/quadrupleo/topology-openstack.png|alt=quadrupleo]]
-
-# destroy your cluster (use it with caution!!!!!)
+# Destroy your cluster (use it with caution!!!!!)
 
 $ terraform destroy
 
