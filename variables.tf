@@ -1,3 +1,4 @@
+#
 variable "user_name" {
    description = "The OpenStack Tenant user name"  
 }
@@ -16,25 +17,29 @@ variable "auth_url" {
 
 
 variable "image" {
-  default = "centos-snap-root-enabled-updated"
+  description = "your image name"
 }
 
 variable "flavor" {
   default = "m1.small"
 }
 
+
+/*
 variable "ssh_key_file" {
-  default = "~/osxu.pub"
+  default = "~/key.pub"
 }
+*/
 
 variable "ssh_user_name" {
   default = "root"
 }
 
 variable "external_gateway" {
-  default= "f6bdeaa8-0a22-4266-84d0-f201865598a5"
+  description = "the id of your external gateway"
 }
 
 variable "pool" {
-  default = "ext_net"
+  description = "external folating ip pool"
+  #default = "public"
 }
