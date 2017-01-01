@@ -6,7 +6,9 @@ For more information, please refer to this guide: https://goo.gl/gbnMDD
 
 #Mission
 
-With Terraform you can spin up your master, worker and etcd nodes on OpenStack within 1-2 minutes. You can install Terraform by following this link. 
+With Terraform you can spin up your master, worker and etcd nodes on OpenStack within 1-2 minutes. You can install Terraform by following this link:
+
+https://www.terraform.io/intro/getting-started/install.html 
 
 The config files in this Repo deploys 9 nodes (3 masters, 2 worker nodes, 3 etcds and the LB (HAProxy)) with a new network “openshift”, subnets, router, security group, etc. on your OpenStack cloud .You can adjust this script as you need, by simply commenting out the masters, nodes and HAProxy or other resources such as floatingIps, etc.
 
