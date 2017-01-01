@@ -2,7 +2,9 @@
 
 OpenShift Origin On OpenStack with Terraform and Ansible Anywhere
 
-Please refer to: https://goo.gl/gbnMDD
+For more information, please refer to this guide: https://goo.gl/gbnMDD
+
+#Mission
 
 With Terraform you can spin up your master, worker and etcd nodes on OpenStack within 1-2 minutes. You can install Terraform by following this link. 
 
