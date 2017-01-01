@@ -57,6 +57,7 @@ $ terraform show
 
 In Horizon, under Network Topology, you should see something similar to this:
 
+[[https://github.com/cloudssky/quadrupleo/topology-openstack.png|alt=quadrupleo]]
 
 # destroy your cluster (use it with caution!!!!!)
 
@@ -67,5 +68,4 @@ To create the Terraform Graph, you might want to use:
 $ terraform graph > openshift.dot
 $ dot openstack.dot -Tsvg -o openshift.svg
 
-You’ll get something similar to this (only to show how terraform rocks):
 
