@@ -62,6 +62,7 @@ $ terraform destroy
 To create the Terraform Graph, you might want to use:
 
 $ terraform graph > openshift.dot
+
 $ dot openstack.dot -Tsvg -o openshift.svg
 
 
