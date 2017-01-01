@@ -5,7 +5,9 @@ provider "openstack" {
     auth_url  = "${var.auth_url}"
 }
 
-/* resource "openstack_compute_keypair_v2" "openshift" {
+# we don't need the pub key with our golden image
+/*
+resource "openstack_compute_keypair_v2" "openshift" {
   name       = "openshift"
   public_key = "${file("${var.ssh_key_file}.pub")}"
 }
