@@ -1,0 +1,4 @@
+user_name = "your user name"
+tenant_name = "your tenant name"
+password= "your password"
+auth_url = "http://<your ip/ domain>:5000/v2.0"
