@@ -37,32 +37,6 @@ resource "openstack_networking_router_interface_v2" "openshift" {
   subnet_id = "${openstack_networking_subnet_v2.openshift.id}"
 }
 
-resource "openstack_compute_secgroup_v2" "openshift" {
-  name        = "openshift"
-  description = "Security group for the Terraform example instances"
-
-  rule {
-    from_port   = 22
-    to_port     = 22
-    ip_protocol = "tcp"
-    cidr        = "0.0.0.0/0"
-  }
-
-  rule {
-    from_port   = 80
-    to_port     = 80
-    ip_protocol = "tcp"
-    cidr        = "0.0.0.0/0"
-  }
-
-  rule {
-    from_port   = -1
-    to_port     = -1
-    ip_protocol = "icmp"
-    cidr        = "0.0.0.0/0"
-  }
-}
-
 resource "openstack_compute_floatingip_v2" "float1" {
   pool       = "${var.pool}"
   depends_on = ["openstack_networking_router_interface_v2.openshift"]
