@@ -63,6 +63,8 @@ $ terraform show
 
 $ terraform destroy
 
+# Terraform Graph
+
 To create the Terraform Graph, you might want to use:
 
 $ terraform graph > openshift.dot
